@@ -295,7 +295,7 @@ Update_xrayr() {
 
 #show last 100 line log
 
-nhật ký_xrayr() {
+logs_xrayr() {
   echo "100 dòng nhật ký chạy sẽ được hiển thị"
   docker-compose logs --tail 100
 }
