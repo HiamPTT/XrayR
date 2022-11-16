@@ -295,13 +295,13 @@ Cậpnhật_xrayr() {
 
 #show last 100 line log
 
-Nhật ký_xrayr() {
+Nhậtký_xrayr() {
   echo "100 dòng nhật ký chạy sẽ được hiển thị"
   docker-compose logs --tail 100
 }
 
 # Update config
-cập nhật cấu hình_xrayr() {
+cậpnhậtcấuhình_xrayr() {
   cd ${cur_dir}
   echo "đóng dịch vụ hiện tại"
   docker-compose down
@@ -311,7 +311,7 @@ cập nhật cấu hình_xrayr() {
   docker-compose up -d
 }
 
-Khởi động lại_xrayr() {
+Khởiđộnglại_xrayr() {
   cd ${cur_dir}
   docker-compose down
   docker-compose up -d
@@ -324,7 +324,7 @@ Xoá_xrayr() {
   echo "đã xóa thành công!"
 }
 # Install xrayr
-Cài đặt_xrayr() {
+Càiđặt_xrayr() {
   pre_install_docker_compose
   config_docker
   install_docker
