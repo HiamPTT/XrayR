@@ -285,7 +285,7 @@ install_dependencies() {
 }
 
 #update_image
-Cập nhật_xrayr() {
+Cậpnhật_xrayr() {
   cd ${cur_dir}
   echo "Tải hình ảnh DOCKER"
   docker-compose pull
