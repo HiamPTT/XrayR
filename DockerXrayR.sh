@@ -285,7 +285,7 @@ install_dependencies() {
 }
 
 #update_image
-Update_xrayr() {
+Cập nhật_xrayr() {
   cd ${cur_dir}
   echo "Tải hình ảnh DOCKER"
   docker-compose pull
@@ -295,13 +295,13 @@ Update_xrayr() {
 
 #show last 100 line log
 
-logs_xrayr() {
+Nhật ký_xrayr() {
   echo "100 dòng nhật ký chạy sẽ được hiển thị"
   docker-compose logs --tail 100
 }
 
 # Update config
-UpdateConfig_xrayr() {
+cập nhật cấu hình_xrayr() {
   cd ${cur_dir}
   echo "đóng dịch vụ hiện tại"
   docker-compose down
@@ -311,20 +311,20 @@ UpdateConfig_xrayr() {
   docker-compose up -d
 }
 
-restart_xrayr() {
+Khởi động lại_xrayr() {
   cd ${cur_dir}
   docker-compose down
   docker-compose up -d
   echo "Khởi động lại thành công!"
 }
-delete_xrayr() {
+Xoá_xrayr() {
   cd ${cur_dir}
   docker-compose down
   cd ~
   echo "đã xóa thành công!"
 }
 # Install xrayr
-Install_xrayr() {
+Cài đặt_xrayr() {
   pre_install_docker_compose
   config_docker
   install_docker
@@ -333,7 +333,7 @@ Install_xrayr() {
 # Initialization step
 clear
 while true; do
-  echo "Menu XrayR Docker:"
+  echo "Xin chào Phạm Tiến Thắng, mời chọn 1 chức năng phía dưới:"
   for ((i = 1; i <= ${#operation[@]}; i++)); do
     hint="${operation[$i - 1]}"
     echo -e "${green}${i}${plain}) ${hint}"
