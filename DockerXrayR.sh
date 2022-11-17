@@ -285,7 +285,7 @@ install_dependencies() {
 }
 
 #update_image
-Cậpnhật_xrayr() {
+Update_xrayr() {
   cd ${cur_dir}
   echo "Tải hình ảnh DOCKER"
   docker-compose pull
@@ -295,13 +295,13 @@ Cậpnhật_xrayr() {
 
 #show last 100 line log
 
-Nhậtký_xrayr() {
+logs_xrayr() {
   echo "100 dòng nhật ký chạy sẽ được hiển thị"
   docker-compose logs --tail 100
 }
 
 # Update config
-cậpnhậtcấuhình_xrayr() {
+UpdateConfig_xrayr() {
   cd ${cur_dir}
   echo "đóng dịch vụ hiện tại"
   docker-compose down
@@ -311,20 +311,20 @@ cậpnhậtcấuhình_xrayr() {
   docker-compose up -d
 }
 
-Khởiđộnglại_xrayr() {
+restart_xrayr() {
   cd ${cur_dir}
   docker-compose down
   docker-compose up -d
   echo "Khởi động lại thành công!"
 }
-Xoá_xrayr() {
+delete_xrayr() {
   cd ${cur_dir}
   docker-compose down
   cd ~
   echo "đã xóa thành công!"
 }
 # Install xrayr
-Càiđặt_xrayr() {
+Install_xrayr() {
   pre_install_docker_compose
   config_docker
   install_docker
