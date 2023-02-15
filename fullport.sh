@@ -421,7 +421,6 @@ Install_xrayr() {
 # Initialization step
 clear
 while true; do
-  echo "-----XrayR HuyHoang-----"
   echo "Docker 80-443 XrayR for SHOPKIMOCHI.XYZ"
   echo "Modder: TÚN"
   echo "Vui lòng nhập một số để Thực Hiện Câu Lệnh:"
