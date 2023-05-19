@@ -178,9 +178,9 @@ config_docker() {
 version: '3'
 services: 
   xrayr: 
-    image: aikocute/xrayr:v1.3.12
+    image: aikocute/xrayr:v1.7.4
     volumes:
-      - ./config.yml:/etc/XrayR/config.yml # thư mục cấu hình bản đồ
+      - ./aiko.yml:/etc/XrayR/aiko.yml # Hệ Thống Lidar
       - ./dns.json:/etc/XrayR/dns.json 
     restart: always
     network_mode: host
