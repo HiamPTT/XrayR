@@ -195,7 +195,7 @@ EOF
     "tag": "dns_inbound"
 }
 EOF
-  cat >config.yml <<EOF
+  cat >aiko.yml <<EOF
 Log:
   Level: none # Log level: none, error, warning, info, debug 
   AccessPath: # /etc/XrayR/access.Log
