@@ -81,8 +81,8 @@ Nodes:
         Provider: cloudflare # DNS cert provider, Get the full support list here: https://go-acme.github.io/lego/dns/
         Email: test@me.com
         DNSEnv: # DNS ENV option used by DNS provider
-          CLOUDFLARE_EMAIL: trong2006a30@gmail.com
-          CLOUDFLARE_API_KEY: be178aac33466f1a9d5ac58277a090c19ff5f
+          CLOUDFLARE_EMAIL: fakinqover@gmail.com
+          CLOUDFLARE_API_KEY: 900b60841875c505893a12774506e80665921
   -
     PanelType: "V2board" # Panel type: SSpanel, V2board, PMpanel, Proxypanel
     ApiConfig:
@@ -127,4 +127,4 @@ Nodes:
 EOF
 cd /root
 xrayr restart
-red "đã cài đặt xong xray 80 443 mời quý zị dùng, bản quyền edit thuộc về vũ văn thái zalo 0968343658"
+red "Cài đặt thành công, XrayR status để kiểm tra. Mod bởi Tún"
