@@ -1,6 +1,6 @@
 #!/bin/bash
 # bản chạy 443 và 80 xrayr thường
-bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/longyi8/XrayR/master/install.sh)
 
 
     read -p "Nhập Link Web :" domain
